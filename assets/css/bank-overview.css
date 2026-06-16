@@ -1,0 +1,111 @@
+.bank-overview {
+
+    padding: 120px 100px;
+
+    background: white;
+}
+
+.bank-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 80px;
+
+    margin-bottom: 150px;
+}
+
+.bank-row.reverse {
+
+    flex-direction: row-reverse;
+}
+
+.bank-image {
+
+    flex: 1;
+}
+
+.bank-image img {
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .08);
+}
+
+.bank-content {
+
+    flex: 1;
+}
+
+.section-tag {
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    background: #eef2ff;
+
+    color: #007dc2;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.bank-content h2 {
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #071c35;
+}
+
+.bank-content p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+
+    color: #667085;
+}
+
+@media(max-width:900px) {
+
+    .bank-row,
+    .bank-row.reverse {
+
+        flex-direction: column;
+    }
+
+    .bank-overview {
+
+        padding: 60px 30px;
+    }
+
+    .bank-content {
+
+        text-align: center;
+    }
+
+    .bank-content h2 {
+
+        font-size: 34px;
+    }
+
+}

@@ -1,0 +1,148 @@
+.wealth-management {
+
+    padding: 120px 8%;
+    background: #ffffff;
+}
+
+
+.wealth-container {
+
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+
+.wealth-content {
+
+    flex: 1;
+}
+
+
+.wealth-content h3 {
+
+    font-size: 2rem;
+
+    margin-bottom: 25px;
+
+    color: #111827;
+}
+
+
+.wealth-content p {
+
+    color: #6f7481;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+}
+
+
+.wealth-image {
+
+    flex: 1;
+
+    height: 500px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+
+.wealth-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+
+.service-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .05);
+
+    transition: .4s;
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.service-number {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    font-weight: 700;
+
+    background: #eef3ff;
+
+    color: #2554d6;
+}
+
+
+.service-card h3 {
+
+    margin-bottom: 20px;
+}
+
+
+.service-card p {
+
+    color: #6f7481;
+
+    line-height: 1.8;
+}
+
+
+@media(max-width:992px) {
+
+    .wealth-container {
+
+        flex-direction: column;
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
